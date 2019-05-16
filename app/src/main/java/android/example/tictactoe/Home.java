@@ -84,14 +84,14 @@ public class Home extends AppCompatActivity {
                         ((arr[0][0] == arr[1][1]) && (arr[1][1] == arr[2][2])) ||
                         ((arr[0][2] == arr[1][1]) && (arr[1][1] == arr[2][0]))) {
                         if(turn == 0) {
-                            text = player2 + " Won";
-                            openDialog();
-
-                            System.out.println(player2 + "Wins");
-                        } else {
                             text = player1 + " Won";
                             openDialog();
+
                             System.out.println(player1 + "Wins");
+                        } else {
+                            text = player2 + " Won";
+                            openDialog();
+                            System.out.println(player2 + "Wins");
                         }
                     } else if(count  == 9){
                         text = "Game Over";
